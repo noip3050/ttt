@@ -1,0 +1,98 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f4f4f9; /* خلفية فاتحة */
+    font-family: 'Roboto', sans-serif; /* خط حديث */
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    color: #333; /* لون داكن للنصوص */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+label {
+    color: #555; /* لون مريح للعين للنصوص */
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.answers {
+    list-style-type: none; /* إزالة النقاط من القوائم */
+    padding: 0;
+}
+
+.answers li {
+    margin: 10px 0;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="radio"]:checked + label {
+    font-weight: bold; /* تكبير النص عند اختيار الإجابة */
+    color: #000; /* تغيير اللون عند الاختيار */
+}
+
+#next-btn {
+    background-color: #4CAF50; /* لون أخضر مريح للزر */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#next-btn:disabled {
+    background-color: #ccc; /* لون رمادي للزر غير المفعّل */
+    cursor: not-allowed;
+}
+
+#next-btn:hover:not(:disabled) {
+    background-color: #45a049; /* تأثير تحريك الزر عند تمرير الماوس */
+}
+
+#result {
+    font-size: 22px;
+    color: #333;
+    margin-top: 20px;
+    display: none;
+}
+
+.correct {
+    color: green; /* لون أخضر للإجابة الصحيحة */
+    font-weight: bold;
+}
+
+.incorrect {
+    color: red; /* لون أحمر للإجابة الخاطئة */
+    font-weight: bold;
+}
+
+/* Progress bar for future use */
+#progress-container {
+    width: 100%;
+    background-color: #f3f3f3;
+    margin-bottom: 20px;
+}
+
+#progress-bar {
+    width: 0%;
+    height: 10px;
+    background-color: #4CAF50;
+}
+
+/* Hidden by default for result section */
+.hidden {
+    display: none;
+}
